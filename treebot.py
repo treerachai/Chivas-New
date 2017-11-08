@@ -107,7 +107,7 @@ wait = {
     'autoAdd':True,
     'message':" ",
     "lang":"JP",
-    "comment":"Auto Like",
+    "comment":"Auto Like By Ŧяәәƅoŧ",
     "commentOn":False,
     "likeOn":False,
     "commentBlack":{},
@@ -905,7 +905,7 @@ def bot(op):
                     cl.sendText(msg.to,"Kami mengubah pesan🛡")
                 else:
                     cl.sendText(msg.to,"Change information")
-            elif msg.text in ["Pesan add check","Message Confirmation"]:
+            elif msg.text in ["Pesan add cek","Message Confirmation"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,"Additional information is automatically set to the following \n\n" + wait["message"])
                 else:
@@ -946,7 +946,7 @@ def bot(op):
             elif msg.text in ["Com off"]:
                 if wait["commentOn"] == False:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"It is already turned off")
+                        cl.sendText(msg.to,"Hal ini sudah off")
                     else:
                         cl.sendText(msg.to,"It is already turned off")
                 else:
@@ -956,7 +956,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"To turn off")
             elif msg.text in ["Com","Comment"]:
-                cl.sendText(msg.to,"Auto Comment saat ini telah ditetapkan sebagai berikut:👈\n\n" + str(wait["comment"]))
+                cl.sendText(msg.to,"Auto komentar saat ini telah ditetapkan sebagai berikut:👈\n\n" + str(wait["comment"]))
             elif msg.text in ["Com Bl"]:
                 wait["wblack"] = True
                 cl.sendText(msg.to,"Please send contacts from the person you want to add to the blacklistô€œô€…”👈")
@@ -1032,7 +1032,7 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "=========================\nActive readers:%s\n\n\n\nPassive readers:\n%s\n\n=========================\nIn the last seen point:\n[%s]\n=========================\n [☸]➦Powered By: Treebot•┅─────" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "--------------\nActive readers:%s\n\n\n\nPassive readers:\n%s\n\n--------------\nIn the last seen point:\n[%s]\n--------------\n [☸]➦Powered By: Ŧяәәƅoŧ•┅────" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                         print "ReadPoint Set..."
                         try:
                             del wait2['readPoint'][msg.to]
