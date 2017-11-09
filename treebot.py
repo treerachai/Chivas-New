@@ -14,12 +14,14 @@ print u"login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""-----  F O R  U S E R  -----
+helpMessage ="""Ŧяәәƅoŧ v2.7
+ ~~~~~~~ Command ~~~~~~~
 ¤  Tagall     - Tagall Member Group
 ¤  Lurking    - Set Point Read
 ¤  Result     - Reading Point
 ¤  Ginfo      - Info Grup
------  F O R   A D M I N  -----
+
+ ~~~~~~ Command Admin ~~~~~~
 ¤  Glist      - List Group BOT
 ¤  Cancel     - Cancel All Pending Grup
 ¤  Mid @      - Get MID 
@@ -42,12 +44,14 @@ helpMessage ="""-----  F O R  U S E R  -----
 ¤  Inviteme:    - Via Gid
 ¤  Info grup
 ¤  Clear grup
------  F O R  K I C K E R  -----
+
+ ~~~~~ Command for kicker ~~~~~ 
 ¤  Nuke
 ¤  Ratakan
 ¤  Kick @       - Via Tag
 ¤  Kick:        - Via MID
------  F O R  P L A Y E R  -----
+
+ ~~~~~~ Command Player ~~~~~~
 ¤  Bc:ct 
 ¤  Bc:grup
 ¤  Block @
@@ -63,7 +67,7 @@ helpMessage ="""-----  F O R  U S E R  -----
 ¤  Mycopy @    - Copy Profile 
 ¤  Mybackup @  - Backup Profile
 
------  S E T T I N G  ------     
+ ~~~~~~ Command Setting ~~~~~~    
 ¤  [Like:on/off]     
 ¤  [Add on/off] 	 
 ¤  [Auto join on/off] 	   
@@ -77,14 +81,15 @@ helpMessage ="""-----  F O R  U S E R  -----
 ¤  [Message set:]	
 ¤  [Comment set:]	
 ¤  [Pesan add:]	
------ P R O T E C T -----       
+
+ ~~~~ Auto Setting Command ~~~~~    
 ¤  [Panick:on/off]      
 ¤  [Protect on]			   
 ¤  [Qrprotect on/off]			   
 ¤  [Inviteprotect on/off]			   
 ¤  [Cancelprotect on/off]		   
 ¤  [Staff add/remove @]	   
------  FOR ADMIN  -----
+ ~~~~~~~~ For Admin ~~~~~~~~
   
 """
 KAC=[cl,ki,ki2,ki3,ki4,ki5]
@@ -107,7 +112,7 @@ wait = {
     'autoAdd':True,
     'message':" ",
     "lang":"JP",
-    "comment":"Auto Like By Ŧяәәƅoŧ",
+    "comment":"Auto Like",
     "commentOn":False,
     "likeOn":False,
     "commentBlack":{},
@@ -905,7 +910,7 @@ def bot(op):
                     cl.sendText(msg.to,"Kami mengubah pesan🛡")
                 else:
                     cl.sendText(msg.to,"Change information")
-            elif msg.text in ["Pesan add cek","Message Confirmation"]:
+            elif msg.text in ["Pesan add check","Message Confirmation"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,"Additional information is automatically set to the following \n\n" + wait["message"])
                 else:
@@ -946,7 +951,7 @@ def bot(op):
             elif msg.text in ["Com off"]:
                 if wait["commentOn"] == False:
                     if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"Hal ini sudah off")
+                        cl.sendText(msg.to,"It is already turned off")
                     else:
                         cl.sendText(msg.to,"It is already turned off")
                 else:
@@ -956,7 +961,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"To turn off")
             elif msg.text in ["Com","Comment"]:
-                cl.sendText(msg.to,"Auto komentar saat ini telah ditetapkan sebagai berikut:👈\n\n" + str(wait["comment"]))
+                cl.sendText(msg.to,"Auto Comment saat ini telah ditetapkan sebagai berikut:👈\n\n" + str(wait["comment"]))
             elif msg.text in ["Com Bl"]:
                 wait["wblack"] = True
                 cl.sendText(msg.to,"Please send contacts from the person you want to add to the blacklistô€œô€…”👈")
@@ -1032,7 +1037,7 @@ def bot(op):
                                 print rom
                                 chiya += rom[1] + "\n"
 
-                        cl.sendText(msg.to, "--------------\nActive readers:%s\n\n\n\nPassive readers:\n%s\n\n--------------\nIn the last seen point:\n[%s]\n--------------\n [☸]➦Powered By: Ŧяәәƅoŧ•┅────" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "---------------\nActive readers:%s\n\n\n\nPassive readers:\n%s\n\n---------------\nIn the last seen point:\n[%s]\n---------------\n [☸]➦Powered By: Ŧяәәƅoŧ•┅─────" % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                         print "ReadPoint Set..."
                         try:
                             del wait2['readPoint'][msg.to]
