@@ -15,13 +15,13 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 helpMessage ="""Ŧяәәƅoŧ v2.7
- ~~~~~~~ Command ~~~~~~~
+ ~~~ Command ~~~
 ¤  Tagall     - Tagall Member Group
 ¤  Lurking    - Set Point Read
 ¤  Result     - Reading Point
 ¤  Ginfo      - Info Grup
 
- ~~~~~~ Command Admin ~~~~~~
+ ~~~ Command Admin ~~~
 ¤  Glist      - List Group BOT
 ¤  Cancel     - Cancel All Pending Grup
 ¤  Mid @      - Get MID 
@@ -45,13 +45,13 @@ helpMessage ="""Ŧяәәƅoŧ v2.7
 ¤  Info grup
 ¤  Clear grup
 
- ~~~~~ Command for kicker ~~~~~ 
+ ~~~ Command for kicker ~~~
 ¤  Nuke
 ¤  Ratakan
 ¤  Kick @       - Via Tag
 ¤  Kick:        - Via MID
 
- ~~~~~~ Command Player ~~~~~~
+ ~~~ Command Player ~~~
 ¤  Bc:ct 
 ¤  Bc:grup
 ¤  Block @
@@ -67,7 +67,7 @@ helpMessage ="""Ŧяәәƅoŧ v2.7
 ¤  Mycopy @    - Copy Profile 
 ¤  Mybackup @  - Backup Profile
 
- ~~~~~~ Command Setting ~~~~~~    
+ ~~~ Command Setting ~~~    
 ¤  [Like:on/off]     
 ¤  [Add on/off] 	 
 ¤  [Auto join on/off] 	   
@@ -82,14 +82,14 @@ helpMessage ="""Ŧяәәƅoŧ v2.7
 ¤  [Comment set:]	
 ¤  [Pesan add:]	
 
- ~~~~ Auto Setting Command ~~~~~    
+ ~~~ Auto Setting Command ~~~    
 ¤  [Panick:on/off]      
 ¤  [Protect on]			   
 ¤  [Qrprotect on/off]			   
 ¤  [Inviteprotect on/off]			   
 ¤  [Cancelprotect on/off]		   
 ¤  [Staff add/remove @]	   
- ~~~~~~~~ For Admin ~~~~~~~~
+ ~~~~ For Admin ~~~~
   
 """
 KAC=[cl,ki,ki2,ki3,ki4,ki5]
